@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A1 Professional Cleaning</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-slider {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+        }
+        .slides-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .slide {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+        .slide-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <!-- Main Header Area -->
@@ -37,20 +68,65 @@
     </header>
 
     <!-- Hero Slider Area -->
-    <section class="hero-slider">
-        <div class="single-slider">
-            <div class="container">
-                <div class="slider-content">
-                    <h1>Professional & Quality<br>Cleaning Service</h1>
-                    <p>We provide top-notch cleaning services for both residential and commercial spaces</p>
-                    <div class="slider-btn">
-                        <a href="#services" class="primary-btn">Our Services</a>
-                        <a href="#contact" class="secondary-btn">Contact Us</a>
+    <section class="hero-slider relative min-h-screen">
+        <!-- Slides -->
+        <div class="slides-container">
+            <div class="slide active">
+                <img src="images/pexels-karolina-grabowska-4239091.jpg" alt="Professional Cleaning" class="slide-bg">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
+            </div>
+            <div class="slide">
+                <img src="images/pexels-matilda-wormwood-4098764.jpg" alt="Cleaning Service" class="slide-bg">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
+            </div>
+            <div class="slide">
+                <img src="images/high-angle-view-cleaning-text-equipments-blackboard.jpg" alt="Cleaning Equipment" class="slide-bg">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
+            </div>
+            <div class="slide">
+                <img src="images/still-life-cleaning-tools.jpg" alt="Cleaning Tools" class="slide-bg">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="container mx-auto px-8 relative z-10">
+            <div class="flex min-h-screen items-center">
+                <div class="slider-content max-w-2xl text-white pt-20">
+                    <h1 class="text-5xl font-bold leading-tight mb-6">
+                        Professional & Quality<br>
+                        <span class="text-teal-400">Cleaning Service</span>
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8">We provide top-notch cleaning services for both residential and commercial spaces, ensuring pristine environments that reflect your standards.</p>
+                    <div class="slider-btn flex space-x-4">
+                        <a href="#services" class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-md transition-colors duration-300 font-semibold">Book Service</a>
+                        <a href="#contact" class="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-md transition-colors duration-300 font-semibold">Contact Us</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        // Image slider functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[index].classList.add('active');
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            // Change slide every 5 seconds
+            setInterval(nextSlide, 5000);
+        });
+    </script>
 
     <!-- Features Area -->
     <section class="features-area">

@@ -7,6 +7,11 @@
     <title>A1 Professional Cleaning Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container {
+            @apply max-w-[1800px] mx-auto px-[70px];
+        }
+    </style>
 </head>
 <body>
     <!-- Main Header Area -->
@@ -40,7 +45,7 @@
 
     <!-- Hero Section -->
     <section class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 pt-20 flex items-center relative">
-        <div class="absolute inset-0 bg-blue-500/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-blue-500/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
         <div class="container mx-auto px-4">
             <div class="flex items-center gap-8">
                 <!-- Left Content -->
@@ -512,57 +517,72 @@
         </div>
     </section>
     <section id="testimonials" class="py-24 bg-gray-50">
-        <div class="container mx-auto px-4">
+        <div class="container">
             <div class="text-center mb-16">
                 <span class="text-[#FFBA08] font-semibold text-lg">Testimonials</span>
                 <h2 class="text-4xl font-bold text-gray-900 mt-2">What Our Clients Say</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="flex text-[#FFBA08] mb-4">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-[#f8f9ff] p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-[#FFBA08] mb-6 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-600 mb-4">"Outstanding service! The team was professional and thorough."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-[#FFBA08]/10 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-[#FFBA08]"></i>
+                    <p class="text-gray-700 text-lg mb-8 leading-relaxed">"Outstanding service! The team was professional, thorough, and paid attention to every detail. My home has never looked better!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 bg-[#FFBA08]/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-[#FFBA08] text-2xl"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-sm">Sarah Johnson</h3>
-                            <p class="text-gray-500 text-xs">Residential Client</p>
+                            <h3 class="font-bold text-lg text-gray-900">Sarah Johnson</h3>
+                            <p class="text-gray-600">Residential Client</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="flex text-[#FFBA08] mb-4">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <!-- Testimonial 2 -->
+                <div class="bg-[#f8f9ff] p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-[#FFBA08] mb-6 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-600 mb-4">"Consistently excellent results for our office. Very reliable."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-[#FFBA08]/10 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-[#FFBA08]"></i>
+                    <p class="text-gray-700 text-lg mb-8 leading-relaxed">"Consistently excellent results for our office. Very reliable and professional. Their attention to detail has made our workspace more inviting for both staff and clients."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 bg-[#FFBA08]/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-[#FFBA08] text-2xl"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-sm">Michael Brown</h3>
-                            <p class="text-gray-500 text-xs">Office Manager</p>
+                            <h3 class="font-bold text-lg text-gray-900">Michael Brown</h3>
+                            <p class="text-gray-600">Office Manager</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="flex text-[#FFBA08] mb-4">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <!-- Testimonial 3 -->
+                <div class="bg-[#f8f9ff] p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-[#FFBA08] mb-6 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-600 mb-4">"Great attention to detail! Exceeded my expectations."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-[#FFBA08]/10 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-[#FFBA08]"></i>
+                    <p class="text-gray-700 text-lg mb-8 leading-relaxed">"Great attention to detail! They exceeded my expectations with their thorough cleaning and friendly service. I highly recommend their services to anyone looking for quality cleaning."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 bg-[#FFBA08]/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-[#FFBA08] text-2xl"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-sm">Emily Davis</h3>
-                            <p class="text-gray-500 text-xs">Residential Client</p>
+                            <h3 class="font-bold text-lg text-gray-900">Emily Davis</h3>
+                            <p class="text-gray-600">Residential Client</p>
                         </div>
                     </div>
                 </div>

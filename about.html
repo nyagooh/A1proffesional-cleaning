@@ -43,11 +43,23 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div class="main-container">
-            <div class="text-center">
-                <h1 class="text-5xl font-bold text-gray-900 mb-6">About A1 Professional Cleaning</h1>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Your trusted partner in professional cleaning services, delivering excellence and pristine results since our inception.</p>
+    <section class="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-gray-100 relative min-h-[60vh] flex items-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="images/professional-cleaning-hero.jpg" alt="Professional Cleaning Service" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/40"></div>
+        </div>
+        
+        <div class="main-container relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl font-bold text-white mb-6 leading-tight">About A1 Professional Cleaning</h1>
+                <p class="text-xl text-gray-200 max-w-2xl">Your trusted partner in professional cleaning services, delivering excellence and pristine results since our inception. We take pride in transforming spaces and exceeding expectations.</p>
+                <div class="mt-8">
+                    <a href="index.html#quote" class="inline-flex items-center gap-2 px-8 py-4 bg-[#FFBA08] text-gray-900 rounded-xl font-semibold hover:bg-[#FFBA08]/90 transition-all duration-300">
+                        Get Started
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>

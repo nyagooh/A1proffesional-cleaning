@@ -99,6 +99,54 @@
             </div>
         </div>
     </section>
+    <section id="quote" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-2">Get Your Free Quote</h2>
+                    <p class="text-gray-600">Fill out the form below and we'll get back to you as soon as possible</p>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Your Name" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#FFBA08]">
+                        <input type="email" placeholder="Your Email" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#FFBA08]">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="tel" placeholder="Phone Number" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#FFBA08]">
+                        <select required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#FFBA08] bg-white">
+                            <option value="">Select Service</option>
+                            <option value="residential">Residential Cleaning</option>
+                            <option value="commercial">Commercial Cleaning</option>
+                            <option value="deep">Deep Cleaning</option>
+                        </select>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="relative">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Preferred Date</label>
+                            <input type="date" id="bookingDate" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#FFBA08]">
+                            <p class="text-sm text-red-500 mt-1 hidden" id="dateError"></p>
+                        </div>
+                        <div class="relative">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Preferred Time</label>
+                            <input type="time" id="bookingTime" required min="08:00" max="17:00"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#FFBA08]">
+                            <p class="text-sm text-red-500 mt-1" id="timeError"></p>
+                        </div>
+                    </div>
+                    <textarea placeholder="Message" required rows="4"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#FFBA08]"></textarea>
+                    <button type="submit" class="w-full bg-[#FFBA08] text-gray-900 font-semibold py-4 px-6 rounded-lg hover:bg-[#FFBA08]/90 transition-all duration-300">
+                        Get Quote
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
     <section id="contact" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">

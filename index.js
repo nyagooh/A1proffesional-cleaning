@@ -172,7 +172,7 @@
          });
          function startLogoScroll() {
             const container = document.getElementById("logoContainer");
-            let speed = 1; // Adjust for desired speed
+            let speed = 0.5; // Adjust for desired speed
             let position = 0;
         
             function scroll() {

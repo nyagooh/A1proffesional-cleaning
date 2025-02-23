@@ -170,3 +170,23 @@
                  });
              }
          });
+         function startLogoScroll() {
+            const container = document.getElementById("logoContainer");
+            let speed = 1; // Adjust for desired speed
+            let position = 0;
+        
+            function scroll() {
+                position -= speed;
+                if (Math.abs(position) >= container.children[0].offsetWidth) {
+                    container.appendChild(container.children[0]); // Move first logo to the end
+                    position = 0; // Reset position to prevent jump
+                }
+                container.style.transform = `translateX(${position}px)`;
+                requestAnimationFrame(scroll);
+            }
+        
+            scroll();
+        }
+        
+        startLogoScroll();
+        

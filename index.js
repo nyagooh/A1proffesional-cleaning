@@ -1,36 +1,6 @@
-         // Stats Counter Animation
-         const counters = document.querySelectorAll('.counter');
-         const speed = 200;
- 
-         const startCounters = () => {
-             counters.forEach(counter => {
-                 const updateCount = () => {
-                     const target = parseInt(counter.getAttribute('data-target'));
-                     const count = parseInt(counter.innerText);
-                     const increment = target / speed;
- 
-                     if (count < target) {
-                         counter.innerText = Math.ceil(count + increment);
-                         setTimeout(updateCount, 1);
-                     } else {
-                         counter.innerText = target;
-                     }
-                 };
-                 updateCount();
-             });
-         };
- 
+
          // Intersection Observer to start counter when in view
-         const statsSection = document.querySelector('.stats-section');
-         const observer = new IntersectionObserver((entries) => {
-             entries.forEach(entry => {
-                 if (entry.isIntersecting) {
-                     startCounters();
-                     observer.unobserve(entry.target);
-                 }
-             });
-         }, { threshold: 0.5 });
- 
+  
 
          document.addEventListener('DOMContentLoaded', function() {
              const slides = document.querySelectorAll('.slide');

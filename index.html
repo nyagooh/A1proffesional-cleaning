@@ -50,34 +50,53 @@
     </header>
 
     <!-- Hero Section -->
-   <section class="min-h-screen pt-20 relative overflow-hidden bg-gradient-to-br from-teal-50/90 via-white to-teal-50/90">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.7))] -z-10"></div>
-        
-        <!-- Background Images -->
-        <div class="absolute inset-0 overflow-hidden">
-            <!-- Left Background Image -->
-            <div class="absolute top-0 left-0 w-1/2 h-full overflow-hidden opacity-20">
-                <img src="images/person-taking-care-office-cleaning.jpg" alt="" 
-                     class="w-full h-full object-cover scale-110">
-                <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-transparent"></div>
+   <section class="min-h-screen pt-20 relative overflow-hidden">
+        <!-- Background Slider -->
+        <div class="absolute inset-0 -z-20">
+            <div class="bg-slider relative w-full h-full">
+                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out bg-center bg-cover bg-no-repeat" style="background-image: url('images/professional-cleaning.jpg')"></div>
+                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out bg-center bg-cover bg-no-repeat" style="background-image: url('images/person-taking-care-office-cleaning.jpg')"></div>
+                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out bg-center bg-cover bg-no-repeat" style="background-image: url('images/close-up-car-care-washing.jpg')"></div>
             </div>
-            
-            <!-- Right Background Image -->
-            <div class="absolute top-0 right-0 w-1/2 h-full overflow-hidden opacity-20">
-                <img src="images/close-up-car-care-washing.jpg" alt="" 
-                     class="w-full h-full object-cover scale-110">
-                <div class="absolute inset-0 bg-gradient-to-l from-white via-white/95 to-transparent"></div>
-            </div>
-            
-            <!-- Center Background Image -->
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] overflow-hidden opacity-10">
-                <img src="images/professional-cleaning.jpg" alt="" 
-                     class="w-full h-full object-cover scale-110 rotate-12">
-                <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white"></div>
-            </div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-teal-900/80 via-teal-800/70 to-teal-900/80"></div>
         </div>
 
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.2))] opacity-20 -z-10"></div>
+        
+        <style>
+            .bg-slider .slide:first-child {
+                opacity: 1;
+            }
+            @keyframes fadeInOut {
+                0%, 100% { opacity: 0; }
+                16.67%, 83.33% { opacity: 1; }
+            }
+            .slide.active {
+                opacity: 1;
+            }
+        </style>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const slides = document.querySelectorAll('.bg-slider .slide');
+                let currentSlide = 0;
+                
+                function nextSlide() {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                }
+                
+                // Show first slide
+                slides[0].classList.add('active');
+                
+                // Change slide every 8 seconds
+                setInterval(nextSlide, 8000);
+            });
+        </script>
+        
         <!-- Decorative Elements -->
         <div class="absolute top-32 right-32 w-20 h-20 bg-teal-100 rounded-full blur-xl opacity-75 animate-pulse"></div>
         <div class="absolute bottom-32 right-48 w-32 h-32 bg-teal-100 rounded-full blur-2xl opacity-60"></div>

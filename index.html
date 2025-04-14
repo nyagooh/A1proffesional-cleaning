@@ -33,11 +33,10 @@
                     <div class="flex items-center space-x-6">
                         <nav class="main-menu">
                             <ul class="flex space-x-6">
-                                <li><a href="#home" class="text-gray-700 hover:text-teal-600 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-teal-600 after:transition-all after:duration-300">Home</a></li>
+                                <li><a href="index.html" class="text-gray-700 hover:text-teal-600 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-teal-600 after:transition-all after:duration-300">Home</a></li>
                                 <li><a href="about.html" class="text-gray-700 hover:text-teal-600 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-teal-600 after:transition-all after:duration-300">About</a></li>
                                 <li><a href="services.html" class="text-gray-700 hover:text-teal-600 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-teal-600 after:transition-all after:duration-300">Services</a></li>
-                                <li><a href="#pricing" class="text-gray-700 hover:text-teal-600 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-teal-600 after:transition-all after:duration-300">Pricing</a></li>
-                                <li><a href="#contact" class="text-gray-700 hover:text-teal-600 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-teal-600 after:transition-all after:duration-300">Contact</a></li>
+                                <li><a href="contact.html" class="text-gray-700 hover:text-teal-600 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-teal-600 after:transition-all after:duration-300">Contact</a></li>
                             </ul>
                         </nav>
                         <div class="header-btn">
@@ -54,76 +53,34 @@
         <!-- Background Slider -->
         <div class="absolute inset-0 -z-20">
             <div class="bg-slider relative w-full h-full">
-                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out bg-center bg-cover bg-no-repeat" style="background-image: url('images/professional-cleaning.jpg')"></div>
-                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out bg-center bg-cover bg-no-repeat" style="background-image: url('images/person-taking-care-office-cleaning.jpg')"></div>
-                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out bg-center bg-cover bg-no-repeat" style="background-image: url('images/close-up-car-care-washing.jpg')"></div>
+                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out bg-center bg-cover bg-no-repeat" style="background-image: url('images/man-with-cleaning-products.jpg')"></div>
             </div>
             <!-- Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-r from-teal-900/80 via-teal-800/70 to-teal-900/80"></div>
+            <div class="absolute inset-0 bg-[#000000]/50"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#000000]/60 via-[#000000]/50 to-transparent"></div>
         </div>
 
         <!-- Background Pattern -->
         <div class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.2))] opacity-20 -z-10"></div>
         
-        <style>
-            .bg-slider .slide:first-child {
-                opacity: 1;
-            }
-            @keyframes fadeInOut {
-                0%, 100% { opacity: 0; }
-                16.67%, 83.33% { opacity: 1; }
-            }
-            .slide.active {
-                opacity: 1;
-            }
-        </style>
-        
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const slides = document.querySelectorAll('.bg-slider .slide');
-                let currentSlide = 0;
-                
-                function nextSlide() {
-                    slides[currentSlide].classList.remove('active');
-                    currentSlide = (currentSlide + 1) % slides.length;
-                    slides[currentSlide].classList.add('active');
-                }
-                
-                // Show first slide
-                slides[0].classList.add('active');
-                
-                // Change slide every 8 seconds
-                setInterval(nextSlide, 8000);
-            });
-        </script>
-        
         <!-- Decorative Elements -->
         <div class="absolute top-32 right-32 w-20 h-20 bg-teal-100 rounded-full blur-xl opacity-75 animate-pulse"></div>
         <div class="absolute bottom-32 right-48 w-32 h-32 bg-teal-100 rounded-full blur-2xl opacity-60"></div>
         <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-teal-50 rounded-full blur-xl opacity-40"></div>
-        
-        <!-- Small Decorative Icons -->
-        <div class="absolute top-24 left-1/3 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-lg rotate-12 animate-float">
-            <i class="fas fa-spray-can-sparkles text-teal-600 text-xl"></i>
-        </div>
-        <div class="absolute bottom-32 left-1/4 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-lg -rotate-12 animate-float animation-delay-1000">
-            <i class="fas fa-broom text-teal-600 text-xl"></i>
-        </div>
-        
         <!-- Content Container -->
         <div class="container mx-auto px-6 h-[calc(100vh-5rem)] flex items-center">
             <div class="max-w-2xl relative z-10">
                 <!-- Small Label -->
-                <div class="inline-flex items-center gap-2 bg-teal-50 text-teal-600 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <div class="inline-flex items-center gap-2 bg-[#FFBA08] text-[#003A1B] px-4 py-2 rounded-full text-sm font-medium mb-6 ml-20">
                     <i class="fas fa-sparkles"></i>
                     <span>Professional Cleaning Service</span>
                 </div>
 
-                <h1 class="text-6xl font-bold leading-tight mb-6">
-                    <span class="block bg-gradient-to-r from-teal-900 via-teal-800 to-teal-900 bg-clip-text text-transparent">Experience The</span>
-                    <span class="block text-teal-600 mt-1">Ultimate Clean</span>
+                <h1 class="text-6xl font-bold leading-tight mb-6 ml-20">
+                    <span class="block text-white">Experience The</span>
+                    <span class="block text-[#FFBA08] mt-1">Ultimate Clean</span>
                 </h1>
-                <p class="text-xl text-gray-600 mb-10 max-w-xl leading-relaxed">Transform your space with our premium cleaning services. We deliver excellence in every detail, ensuring your environment sparkles with freshness.</p>
+                <p class="text-xl text-gray-100 mb-10 max-w-xl leading-relaxed ml-20">Transform your space with our premium cleaning services. We deliver excellence in every detail, ensuring your environment sparkles with freshness.</p>
 
                 <style>
                     .clip-path-curved {
@@ -138,33 +95,17 @@
                     }
                 </style>
                 
-                <!-- Stats/Features -->
-                <div class="grid grid-cols-3 gap-6 mb-10 max-w-xl">
-                    <div class="bg-white/90 backdrop-blur-sm p-5 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 text-center group hover:-translate-y-1">
-                        <div class="text-3xl font-bold text-teal-600 mb-1 group-hover:scale-110 transition-transform">18+</div>
-                        <div class="text-gray-600 text-sm">Years Experience</div>
-                    </div>
-                    <div class="bg-white/90 backdrop-blur-sm p-5 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 text-center group hover:-translate-y-1">
-                        <div class="text-3xl font-bold text-teal-600 mb-1 group-hover:scale-110 transition-transform">1000+</div>
-                        <div class="text-gray-600 text-sm">Happy Clients</div>
-                    </div>
-                    <div class="bg-white/90 backdrop-blur-sm p-5 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 text-center group hover:-translate-y-1">
-                        <div class="text-3xl font-bold text-teal-600 mb-1 group-hover:scale-110 transition-transform">24/7</div>
-                        <div class="text-gray-600 text-sm">Support</div>
-                    </div>
-                </div>
-                
                 <!-- CTA Buttons -->
-                <div class="flex flex-wrap gap-6 items-center">
+                <div class="flex flex-wrap gap-6 items-center ml-20">
                     <a href="#quote" 
-                       class="group px-8 py-4 bg-teal-600 text-white rounded-full font-semibold hover:bg-teal-700 transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-3">
+                       class="group px-8 py-4 bg-[#FFBA08] text-[#003A1B] rounded-full font-semibold hover:bg-[#FFD060] transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-3">
                         <span>Get Free Quote</span>
-                        <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                     <div class="flex items-center gap-2">
-                        <a href="tel:+1234567890" class="inline-flex items-center gap-2 text-gray-700 hover:text-teal-600 transition-colors duration-300">
-                            <div class="w-10 h-10 flex items-center justify-center bg-teal-50 rounded-full hover:bg-teal-100 transition-colors">
-                                <i class="fas fa-phone-alt text-teal-600"></i>
+                        <a href="tel:+1234567890" class="inline-flex items-center gap-2 text-white hover:text-[#FFBA08] transition-colors duration-300">
+                            <div class="w-10 h-10 flex items-center justify-center bg-[#003A1B]/40 backdrop-blur-sm rounded-full hover:bg-[#003A1B]/60 transition-colors border border-[#FFBA08]/30">
+                                <i class="fas fa-phone-alt text-[#FFBA08]"></i>
                             </div>
                             <span class="font-medium">Call Us Now</span>
                         </a>
@@ -172,29 +113,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-                <!-- Right Image Slider -->
-                <div class="w-1/2 h-[500px] relative overflow-hidden rounded-lg shadow-2xl">
-                    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
-                        <img src="images/20240922_134753.jpg" alt="Professional Office Cleaning" class="w-full h-full object-cover">
-                    </div>
-                    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
-                        <img src="images/20240917_160937.jpg" alt="Quality Cleaning Solutions" class="w-full h-full object-cover">
-                    </div>
-                    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
-                        <img src="images/20240905_120636.jpg" alt="Professional Cleaning Service" class="w-full h-full object-cover">
-                    </div>
-                    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
-                        <img src="images/20240830_114532.jpg" alt="Expert Cleaning Team" class="w-full h-full object-cover">
-                    </div>
-                    <!-- Slider Dots -->
-                    <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-3 px-4 py-2 bg-black/40 backdrop-blur rounded-full z-10">
-                        <button class="w-3 h-3 rounded-full bg-[#FFBA08]/50 transition-all duration-300 slider-dot"></button>
-                        <button class="w-3 h-3 rounded-full bg-[#FFBA08]/50 transition-all duration-300 slider-dot"></button>
-                        <button class="w-3 h-3 rounded-full bg-[#FFBA08]/50 transition-all duration-300 slider-dot"></button>
-                        <button class="w-3 h-3 rounded-full bg-[#FFBA08]/50 transition-all duration-300 slider-dot"></button>
-                    </div>
                 </div>
             </div>
         </div>

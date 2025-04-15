@@ -110,7 +110,7 @@
                 <!-- CTA Buttons -->
                 <div class="flex flex-wrap gap-6 items-center">
                     <a href="#quote" 
-                       class="group px-8 py-4 bg-[#FFBA08] text-[#003A1B] rounded-full font-semibold hover:bg-[#FFD060] transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-3">
+                       class="group px-8 py-4 bg-teal-600 text-[#ffffff] rounded-full font-semibold hover:bg-[#FFD060] transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-3">
                         <span>Get Free Quote</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -566,78 +566,48 @@
     </section>
 
     <!-- How It Works Section -->
-    <section id="how-it-works" class="py-16 bg-white relative overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute inset-0 bg-[#FFBA08]/5 skew-y-3 -z-10 transform origin-top-right"></div>
-        <div class="absolute top-20 right-20 w-32 h-32 bg-[#003A1B]/10 rounded-full blur-xl -z-10"></div>
-        <div class="absolute bottom-20 left-20 w-32 h-32 bg-[#FFBA08]/10 rounded-full blur-xl -z-10"></div>
-        
+    <section id="how-it-works" class="py-10 bg-gray-50 relative overflow-hidden">
         <div class="main-container">
             <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-[#FFBA08] font-semibold text-lg inline-block mb-2">Our Process</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">How It Works</h2>
-                <div class="w-20 h-1.5 bg-[#FFBA08] mx-auto rounded-full mb-4"></div>
-                <p class="text-gray-600">We've simplified our cleaning process to make it easy for you to get the professional cleaning services you need.</p>
+            <div class="text-center max-w-xl mx-auto mb-6">
+                <span class="text-[#FFBA08] font-semibold text-sm inline-block mb-1">Our Process</span>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">How It Works</h2>
+                <div class="w-12 h-0.5 bg-[#FFBA08] mx-auto mb-2"></div>
             </div>
 
-            <!-- Steps -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-                <!-- Connecting Line (Desktop) -->
-                <div class="hidden md:block absolute top-24 left-[calc(16.67%+8px)] right-[calc(16.67%+8px)] h-1 bg-gradient-to-r from-[#FFBA08] via-[#FFBA08] to-[#FFBA08] z-0"></div>
-                
+            <!-- Steps - Horizontal Layout -->
+            <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-4 md:gap-6 px-4">
                 <!-- Step 1 -->
-                <div class="relative z-10">
-                    <div class="bg-white rounded-xl shadow-lg p-6 relative border-t-4 border-[#FFBA08] h-full">
-                        <!-- Step Number -->
-                        <div class="w-12 h-12 bg-[#FFBA08] rounded-full flex items-center justify-center text-white font-bold text-xl absolute -top-6 left-1/2 transform -translate-x-1/2 shadow-lg">1</div>
-                        
-                        <div class="text-center pt-8 pb-4">
-                            <div class="w-16 h-16 bg-[#FFBA08]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-calendar-check text-2xl text-[#FFBA08]"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Book Your Service</h3>
-                            <p class="text-gray-600">Schedule your cleaning service online or by phone. We offer flexible appointment times to fit your schedule.</p>
-                        </div>
+                <div class="bg-white rounded-lg shadow-sm p-4 flex flex-col items-center w-full md:w-1/3 hover:shadow-md transition-all duration-300 border-b-2 border-[#FFBA08]">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#FFBA08] text-white mb-3">
+                        <span class="font-bold">1</span>
                     </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-2">Book Your Service</h3>
+                    <p class="text-gray-600 text-sm text-center">Schedule your cleaning online or by phone. We offer flexible times to fit your schedule.</p>
                 </div>
                 
                 <!-- Step 2 -->
-                <div class="relative z-10 mt-12 md:mt-0">
-                    <div class="bg-white rounded-xl shadow-lg p-6 relative border-t-4 border-[#FFBA08] h-full">
-                        <!-- Step Number -->
-                        <div class="w-12 h-12 bg-[#FFBA08] rounded-full flex items-center justify-center text-white font-bold text-xl absolute -top-6 left-1/2 transform -translate-x-1/2 shadow-lg">2</div>
-                        
-                        <div class="text-center pt-8 pb-4">
-                            <div class="w-16 h-16 bg-[#FFBA08]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-broom text-2xl text-[#FFBA08]"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Professional Cleaning</h3>
-                            <p class="text-gray-600">Our certified cleaning experts arrive with all necessary equipment and eco-friendly products to thoroughly clean your space.</p>
-                        </div>
+                <div class="bg-white rounded-lg shadow-sm p-4 flex flex-col items-center w-full md:w-1/3 hover:shadow-md transition-all duration-300 border-b-2 border-[#FFBA08]">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#FFBA08] text-white mb-3">
+                        <span class="font-bold">2</span>
                     </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-2">Professional Cleaning</h3>
+                    <p class="text-gray-600 text-sm text-center">Our certified experts arrive with all necessary equipment and eco-friendly products.</p>
                 </div>
                 
                 <!-- Step 3 -->
-                <div class="relative z-10 mt-12 md:mt-0">
-                    <div class="bg-white rounded-xl shadow-lg p-6 relative border-t-4 border-[#FFBA08] h-full">
-                        <!-- Step Number -->
-                        <div class="w-12 h-12 bg-[#FFBA08] rounded-full flex items-center justify-center text-white font-bold text-xl absolute -top-6 left-1/2 transform -translate-x-1/2 shadow-lg">3</div>
-                        
-                        <div class="text-center pt-8 pb-4">
-                            <div class="w-16 h-16 bg-[#FFBA08]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-thumbs-up text-2xl text-[#FFBA08]"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Satisfaction Guaranteed</h3>
-                            <p class="text-gray-600">We conduct a final walkthrough to ensure your complete satisfaction. If you're not happy, we'll make it right.</p>
-                        </div>
+                <div class="bg-white rounded-lg shadow-sm p-4 flex flex-col items-center w-full md:w-1/3 hover:shadow-md transition-all duration-300 border-b-2 border-[#FFBA08]">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#FFBA08] text-white mb-3">
+                        <span class="font-bold">3</span>
                     </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-2">Satisfaction Guaranteed</h3>
+                    <p class="text-gray-600 text-sm text-center">We ensure your complete satisfaction with a final walkthrough.</p>
                 </div>
             </div>
             
             <!-- CTA -->
-            <div class="text-center mt-12">
-                <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-[#FFBA08] text-gray-900 rounded-xl font-semibold hover:bg-[#FFBA08]/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <div class="text-center mt-6">
+                <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2 bg-[#FFBA08] text-gray-900 rounded-lg font-medium hover:bg-[#FFBA08]/90 transition-all duration-300 text-sm">
                     Book Your Cleaning
                     <i class="fas fa-arrow-right"></i>
                 </a>
@@ -645,50 +615,60 @@
         </div>
     </section>
 
-    <section class="w-full overflow-hidden py-10 bg-white">
-        <h2 class="text-4xl font-bold text-center mb-6 text-gray-900 ">Companies We've Worked With</h2>
-
-        <div class="relative flex overflow-hidden whitespace-nowrap">
-            <!-- Duplicated logos for smooth infinite scroll -->
-            <div id= "logoContainer"class="flex logo-slider space-x-8">
-                <img src="images/cfao-motors-logo-1250x450.jpg" alt="Company 1" class="h-36">
-                <img src="images/nothern fibre.png" alt="Company 2" class="h-36">
-                <img src="images/kisumudental.png" alt="Company 3" class="h-36">
-                <img src="images/vihoiga.jpg" alt="Company 4" class="h-36">
-                <img src="images/nothern fibre.png" alt="Company 5" class="h-36">
-                <img src="images/drraken.png" alt="Company 6" class="h-36">
-                <img src="images/A1 PROFESSIONAL CLEANING-4-1.jpg" alt="Company 7" class="h-36">
-                
-               
+    <section class="py-10 bg-gray-50 relative overflow-hidden">
+        <div class="main-container relative z-10">
+            <div class="text-center max-w-xl mx-auto mb-6">
+                <span class="text-[#FFBA08] font-semibold text-sm inline-block mb-1">Our Clients</span>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Companies We've Worked With</h2>
+                <div class="w-12 h-0.5 bg-[#FFBA08] mx-auto mb-4"></div>
             </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
+                <div class="p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center">
+                    <img src="images/cfao-motors-logo-1250x450.jpg" alt="Company 1" class="h-14 object-contain">
+                </div>
+                <div class="p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center">
+                    <img src="images/nothern fibre.png" alt="Company 2" class="h-14 object-contain">
+                </div>
+                <div class="p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center">
+                    <img src="images/kisumudental.png" alt="Company 3" class="h-14 object-contain">
+                </div>
+                <div class="p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center">
+                    <img src="images/vihoiga.jpg" alt="Company 4" class="h-14 object-contain">
+                </div>
+                <div class="p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center">
+                    <img src="images/drraken.png" alt="Company 6" class="h-14 object-contain">
+                </div>
             </div>
         </div>
-        
     </section>
-    <section id="testimonials" class="py-24 bg-gray-50 relative overflow-hidden">
+    <section id="testimonials" class="py-16 bg-gradient-to-b from-[#003A1B]/5 to-white relative overflow-hidden">
         <!-- Decorative Elements -->
-        <div class="absolute top-20 right-20 w-64 h-64 bg-[#FFBA08] rounded-full blur-3xl opacity-5"></div>
-        <div class="absolute bottom-20 left-20 w-64 h-64 bg-[#003A1B] rounded-full blur-3xl opacity-5"></div>
+        <div class="absolute top-20 right-20 w-64 h-64 bg-[#FFBA08] rounded-full blur-3xl opacity-10"></div>
+        <div class="absolute bottom-20 left-20 w-64 h-64 bg-[#003A1B] rounded-full blur-3xl opacity-10"></div>
 
         <div class="main-container relative">
-            <div class="text-center mb-12">
-                <span class="text-[#FFBA08] font-semibold text-lg">Testimonials</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">What Our Clients Say</h2>
+            <div class="text-center max-w-xl mx-auto mb-10">
+                <span class="text-[#003A1B] font-semibold text-lg inline-block mb-2">Testimonials</span>
+                <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-3">What Our Clients Say</h2>
+                <div class="w-16 h-1 bg-[#003A1B] mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-600">Don't just take our word for it - hear from our satisfied customers</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Testimonial 1 -->
-                <div class="bg-gradient-to-br from-white to-[#f8f9ff] p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group border border-[#FFBA08]/5">transition-all duration-300 hover:-translate-y-1 group border border-[#FFBA08]/5">                    <div class="flex text-[#FFBA08] mb-4 text-lg">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-[#003A1B]">
+                    <div class="flex text-[#FFBA08] mb-4 text-lg">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-700 text-sm md:text-base mb-6 leading-relaxed">"Outstanding service! The team was professional, thorough, and paid attention to every detail. My home has never looked better!"</p>
+                    <p class="text-gray-700 text-base mb-6 leading-relaxed italic">"Outstanding service! The team was professional, thorough, and paid attention to every detail. My home has never looked better!"</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-[#FFBA08]/10 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-[#FFBA08] text-xl"></i>
+                        <div class="w-12 h-12 bg-[#003A1B]/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-[#003A1B] text-xl"></i>
                         </div>
                         <div>
                             <h3 class="font-bold text-base text-gray-900">Sarah Johnson</h3>
@@ -698,7 +678,7 @@
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-gradient-to-br from-white to-[#f8f9ff] p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group border border-[#FFBA08]/5">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-[#003A1B]">
                     <div class="flex text-[#FFBA08] mb-4 text-lg">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -706,10 +686,10 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-700 text-sm md:text-base mb-6 leading-relaxed">"Consistently excellent results for our office. Very reliable and professional. Their attention to detail has made our workspace more inviting for both staff and clients."</p>
+                    <p class="text-gray-700 text-base mb-6 leading-relaxed italic">"Consistently excellent results for our office. Very reliable and professional. Their attention to detail has made our workspace more inviting for both staff and clients."</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-[#FFBA08]/10 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-[#FFBA08] text-xl"></i>
+                        <div class="w-12 h-12 bg-[#003A1B]/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-[#003A1B] text-xl"></i>
                         </div>
                         <div>
                             <h3 class="font-bold text-base text-gray-900">Michael Brown</h3>
@@ -719,7 +699,7 @@
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="bg-gradient-to-br from-white to-[#f8f9ff] p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group border border-[#FFBA08]/5">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-[#003A1B]">
                     <div class="flex text-[#FFBA08] mb-4 text-lg">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -727,10 +707,10 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-700 text-sm md:text-base mb-6 leading-relaxed">"Great attention to detail! They exceeded my expectations with their thorough cleaning and friendly service. I highly recommend their services to anyone looking for quality cleaning."</p>
+                    <p class="text-gray-700 text-base mb-6 leading-relaxed italic">"Great attention to detail! They exceeded my expectations with their thorough cleaning and friendly service. I highly recommend their services to anyone looking for quality cleaning."</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-[#FFBA08]/10 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-[#FFBA08] text-xl"></i>
+                        <div class="w-12 h-12 bg-[#003A1B]/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-[#003A1B] text-xl"></i>
                         </div>
                         <div>
                             <h3 class="font-bold text-base text-gray-900">Emily Davis</h3>
@@ -792,99 +772,269 @@
         </div>
     </section>
 
-    <!-- Contact Area -->
-    <section id="contact" class="py-24 bg-gray-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-[#FFBA08] font-semibold text-lg">Contact Us</span>
-                <h2 class="text-4xl font-bold text-gray-900 mt-2 mb-4">Get In Touch With Us</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Have questions about our services? We're here to help you keep your space spotless.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-10 bg-gray-50 relative overflow-hidden">
+        <div class="main-container relative z-10">
+            <div class="text-center max-w-xl mx-auto mb-6">
+                <span class="text-[#FFBA08] font-semibold text-sm inline-block mb-1">Get In Touch</span>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Contact Us</h2>
+                <div class="w-12 h-0.5 bg-[#FFBA08] mx-auto mb-4"></div>
+                <p class="text-gray-600 text-sm">Have questions or ready to book a cleaning? Reach out to us.</p>
             </div>
 
-            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Location -->
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-[#FFBA08]/10 rounded-full flex items-center justify-center mx-auto mb-4 rotate-90">
-                            <i class="fas fa-map-marker-alt text-2xl text-[#FFBA08]"></i>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Contact Info -->
+                <div class="bg-gray-800 text-white rounded-lg shadow-md p-5 flex flex-col h-full">
+                    <h3 class="text-base font-bold mb-3 border-b border-white/20 pb-2">Contact Information</h3>
+                    
+                    <div class="space-y-4 flex-grow">
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-white/10 p-2 rounded-full">
+                                <i class="fas fa-map-marker-alt text-[#FFBA08]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#FFBA08] mb-1 text-sm">Our Location</h4>
+                                <p class="text-white/80 text-xs">123 Cleaning Street, Nairobi, Kenya</p>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Our Location</h3>
-                        <a href="https://goo.gl/maps/your-location-link" target="_blank" class="text-gray-600 hover:text-[#FFBA08]">
-                            <p>123 Cleaning Street</p>
-                            <p>Nairobi, Kenya</p>
-                        </a>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-white/10 p-2 rounded-full">
+                                <i class="fas fa-phone text-[#FFBA08]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#FFBA08] mb-1 text-sm">Phone Number</h4>
+                                <p class="text-white/80 text-xs">+254 722 123 456</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-white/10 p-2 rounded-full">
+                                <i class="fas fa-envelope text-[#FFBA08]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#FFBA08] mb-1 text-sm">Email Address</h4>
+                                <p class="text-white/80 text-xs">info@a1professionalcleaning.com</p>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Phone Numbers -->
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-[#FFBA08]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-phone-alt text-2xl text-[#FFBA08]"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Phone Number</h3>
-                        <div class="space-y-1">
-                            <a href="tel:+254712345678" class="block text-gray-600 hover:text-[#FFBA08]">+254 712 345 678</a>
-                            <a href="tel:+254734567890" class="block text-gray-600 hover:text-[#FFBA08]">+254 734 567 890</a>
-                        </div>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-[#FFBA08]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-envelope text-2xl text-[#FFBA08]"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Email Address</h3>
-                        <div class="space-y-1">
-                            <a href="mailto:info@a1cleaning.com" class="block text-gray-600 hover:text-[#FFBA08]">info@a1cleaning.com</a>
-                            <a href="mailto:support@a1cleaning.com" class="block text-gray-600 hover:text-[#FFBA08]">support@a1cleaning.com</a>
+                    
+                    <div class="mt-4 pt-3 border-t border-white/20">
+                        <h4 class="font-semibold mb-2 text-xs">Follow Us</h4>
+                        <div class="flex space-x-2">
+                            <a href="#" class="bg-white/10 w-7 h-7 rounded-full flex items-center justify-center hover:bg-[#FFBA08] hover:text-gray-800 transition-all duration-300">
+                                <i class="fab fa-facebook-f text-xs"></i>
+                            </a>
+                            <a href="#" class="bg-white/10 w-7 h-7 rounded-full flex items-center justify-center hover:bg-[#FFBA08] hover:text-gray-800 transition-all duration-300">
+                                <i class="fab fa-twitter text-xs"></i>
+                            </a>
+                            <a href="#" class="bg-white/10 w-7 h-7 rounded-full flex items-center justify-center hover:bg-[#FFBA08] hover:text-gray-800 transition-all duration-300">
+                                <i class="fab fa-instagram text-xs"></i>
+                            </a>
+                            <a href="#" class="bg-white/10 w-7 h-7 rounded-full flex items-center justify-center hover:bg-[#FFBA08] hover:text-gray-800 transition-all duration-300">
+                                <i class="fab fa-linkedin-in text-xs"></i>
+                            </a>
                         </div>
                     </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-md p-5 md:col-span-2 border border-gray-100">
+                    <h3 class="text-base font-bold mb-3 text-gray-900 border-b border-gray-200 pb-2">Send Us a Message</h3>
+                    
+                    <form action="#" method="POST" class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div>
+                                <label for="name" class="block text-xs font-medium text-gray-700 mb-1">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFBA08] focus:border-[#FFBA08] transition-all duration-300" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-xs font-medium text-gray-700 mb-1">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFBA08] focus:border-[#FFBA08] transition-all duration-300" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-xs font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFBA08] focus:border-[#FFBA08] transition-all duration-300" placeholder="+254 7XX XXX XXX">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-xs font-medium text-gray-700 mb-1">Service Interested In</label>
+                            <select id="service" name="service" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFBA08] focus:border-[#FFBA08] transition-all duration-300">
+                                <option value="">Select a Service</option>
+                                <option value="residential">Residential Cleaning</option>
+                                <option value="commercial">Commercial Cleaning</option>
+                                <option value="carpet">Carpet Cleaning</option>
+                                <option value="window">Window Cleaning</option>
+                                <option value="deep">Deep Cleaning</option>
+                                <option value="other">Other Services</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-xs font-medium text-gray-700 mb-1">Your Message</label>
+                            <textarea id="message" name="message" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFBA08] focus:border-[#FFBA08] transition-all duration-300" placeholder="Tell us about your cleaning needs..."></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="w-full bg-[#FFBA08] hover:bg-[#FFBA08]/90 text-gray-900 font-medium py-2 px-4 rounded-lg transition-all duration-300 flex items-center justify-center text-sm">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer Area -->
-    <footer class="bg-gray-900 py-16">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-                <div class="text-gray-300">
-                    <h3 class="text-white text-lg font-semibold mb-4">About Us</h3>
-                    <p class="mb-4">Professional cleaning services delivering exceptional results for homes and businesses.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-[#FFBA08]"><i class="fab fa-facebook-f text-lg"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-[#FFBA08]"><i class="fab fa-linkedin-in text-lg"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-[#FFBA08]"><i class="fab fa-instagram text-lg"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-[#FFBA08]"><i class="fab fa-tiktok text-lg"></i></a>
+    <footer class="bg-gray-800 py-10 text-white">
+        <div class="main-container">
+            <!-- Footer Top -->
+            <div class="flex flex-col md:flex-row justify-between items-start mb-6 pb-6 border-b border-white/10">
+                <!-- Logo and About -->
+                <div class="mb-5 md:mb-0 md:max-w-xs">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                            <img src="/images/A1 PROFESSIONAL CLEANING-4-1.jpg" alt="A1 Professional Cleaning Logo" class="h-6 w-auto rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-base font-bold text-white">A1 Professional</h3>
+                            <p class="text-[#FFBA08] text-xs">Cleaning Services</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-xs mb-3">Professional cleaning services delivering exceptional results for homes and businesses across Kenya.</p>
+                    <div class="flex space-x-2">
+                        <a href="#" class="w-6 h-6 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#FFBA08] transition-colors">
+                            <i class="fab fa-facebook-f text-white text-xs"></i>
+                        </a>
+                        <a href="#" class="w-6 h-6 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#FFBA08] transition-colors">
+                            <i class="fab fa-linkedin-in text-white text-xs"></i>
+                        </a>
+                        <a href="#" class="w-6 h-6 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#FFBA08] transition-colors">
+                            <i class="fab fa-instagram text-white text-xs"></i>
+                        </a>
+                        <a href="#" class="w-6 h-6 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#FFBA08] transition-colors">
+                            <i class="fab fa-tiktok text-white text-xs"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="text-gray-300">
-                    <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="hover:text-[#FFBA08]">Home</a></li>
-                        <li><a href="about.html" class="hover:text-[#FFBA08]">About</a></li>
-                        <li><a href="#services" class="hover:text-[#FFBA08]">Services</a></li>
-                        <li><a href="#contact" class="hover:text-[#FFBA08]">Contact</a></li>
+                
+                <!-- Quick Links -->
+                <div class="mb-5 md:mb-0">
+                    <h3 class="text-sm font-semibold mb-3 relative pl-2 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-[#FFBA08] before:rounded-full">Quick Links</h3>
+                    <ul class="space-y-1.5">
+                        <li>
+                            <a href="#home" class="text-gray-300 hover:text-[#FFBA08] transition-colors flex items-center gap-1.5 text-xs">
+                                <i class="fas fa-chevron-right text-xs text-[#FFBA08]"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-gray-300 hover:text-[#FFBA08] transition-colors flex items-center gap-1.5 text-xs">
+                                <i class="fas fa-chevron-right text-xs text-[#FFBA08]"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services" class="text-gray-300 hover:text-[#FFBA08] transition-colors flex items-center gap-1.5 text-xs">
+                                <i class="fas fa-chevron-right text-xs text-[#FFBA08]"></i>
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="text-gray-300 hover:text-[#FFBA08] transition-colors flex items-center gap-1.5 text-xs">
+                                <i class="fas fa-chevron-right text-xs text-[#FFBA08]"></i>
+                                <span>Testimonials</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-gray-300 hover:text-[#FFBA08] transition-colors flex items-center gap-1.5 text-xs">
+                                <i class="fas fa-chevron-right text-xs text-[#FFBA08]"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="text-gray-300">
-                    <h3 class="text-white text-lg font-semibold mb-4">Our Services</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-[#FFBA08]">Residential Cleaning</a></li>
-                        <li><a href="#" class="hover:text-[#FFBA08]">Commercial Cleaning</a></li>
-                        <li><a href="#" class="hover:text-[#FFBA08]">Deep Cleaning</a></li>
-                        <li><a href="#" class="hover:text-[#FFBA08]">Move In/Out Cleaning</a></li>
+                
+                <!-- Services -->
+                <div class="mb-5 md:mb-0">
+                    <h3 class="text-sm font-semibold mb-3 relative pl-2 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-[#FFBA08] before:rounded-full">Our Services</h3>
+                    <ul class="space-y-1.5">
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-[#FFBA08] transition-colors flex items-center gap-1.5 text-xs">
+                                <i class="fas fa-chevron-right text-xs text-[#FFBA08]"></i>
+                                <span>Residential Cleaning</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-[#FFBA08] transition-colors flex items-center gap-1.5 text-xs">
+                                <i class="fas fa-chevron-right text-xs text-[#FFBA08]"></i>
+                                <span>Commercial Cleaning</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-[#FFBA08] transition-colors flex items-center gap-1.5 text-xs">
+                                <i class="fas fa-chevron-right text-xs text-[#FFBA08]"></i>
+                                <span>Deep Cleaning</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-[#FFBA08] transition-colors flex items-center gap-1.5 text-xs">
+                                <i class="fas fa-chevron-right text-xs text-[#FFBA08]"></i>
+                                <span>Move In/Out Cleaning</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-[#FFBA08] transition-colors flex items-center gap-1.5 text-xs">
+                                <i class="fas fa-chevron-right text-xs text-[#FFBA08]"></i>
+                                <span>Carpet & Upholstery</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="text-gray-300">
-                    <h3 class="text-white text-lg font-semibold mb-4">Working Hours</h3>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-sm font-semibold mb-3 relative pl-2 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-[#FFBA08] before:rounded-full">Contact Info</h3>
                     <ul class="space-y-2">
-                        <li>Monday - Friday: 8:00 - 18:00</li>
-                        <li>Saturday: 9:00 - 16:00</li>
-                        <li>Sunday: Closed</li>
+                        <li class="flex items-start gap-1.5">
+                            <div class="w-5 h-5 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-map-marker-alt text-[#FFBA08] text-xs"></i>
+                            </div>
+                            <span class="text-gray-300 text-xs">123 Cleaning Street, Nairobi, Kenya</span>
+                        </li>
+                        <li class="flex items-start gap-1.5">
+                            <div class="w-5 h-5 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-phone-alt text-[#FFBA08] text-xs"></i>
+                            </div>
+                            <span class="text-gray-300 text-xs">+254 712 345 678</span>
+                        </li>
+                        <li class="flex items-start gap-1.5">
+                            <div class="w-5 h-5 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-envelope text-[#FFBA08] text-xs"></i>
+                            </div>
+                            <span class="text-gray-300 text-xs">info@a1cleaning.com</span>
+                        </li>
+                        <li class="flex items-start gap-1.5">
+                            <div class="w-5 h-5 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-clock text-[#FFBA08] text-xs"></i>
+                            </div>
+                            <div class="text-gray-300 text-xs">
+                                <p>Mon-Fri: 8:00 - 18:00</p>
+                                <p>Sat: 9:00 - 16:00</p>
+                                <p>Sun: Closed</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+            
+            <!-- Footer Bottom -->
+            <div class="text-center text-gray-400 text-xs">
                 <p>&copy; 2025 A1 Professional Cleaning. All rights reserved.</p>
             </div>
         </div>
